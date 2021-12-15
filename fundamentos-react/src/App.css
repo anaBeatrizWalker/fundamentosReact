@@ -1,0 +1,5 @@
+.app .exercicios{
+    display: flex;
+    justify-content: center; /*centraliza os cards*/
+    flex-wrap: wrap; /*quebra a linha dos cards na renderização de uma tela pequena*/
+}
