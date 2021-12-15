@@ -9,8 +9,13 @@ ReactDOM.render(
     <div>
         <Primeiro></Primeiro>
         <ComParametro 
-            titulo="Segundo Componente" 
-            subtitulo="Com paramêtros" />
+            titulo="Situação do Aluno" 
+            aluno="Pedro" 
+            nota={9.5}/>
+        <ComParametro 
+            titulo="Situação do Aluno" 
+            aluno="Maria" 
+            nota={9.9}/>
     </div>, 
     document.getElementById('root')
 )
