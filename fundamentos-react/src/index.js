@@ -1,25 +1,12 @@
 import './index.css' //caminho relativo (arquivo na mesma pasta)
 import ReactDOM from 'react-dom' //importando o React
 import React from 'react'//importando React para usar o JSX
-
-
-const el = document.getElementById('root')
+import Primeiro from './components/basicos/Primeiro'
 
 ReactDOM.render(
-    //gerando código a partir do javascript
+    //referenciando o arquivo como tag
     <div>
-        <strong>Olá react!</strong>
-    </div>, 
-    el 
-)
-
-//OUTRO JEITO
-
-const tag = <strong>Olá react!</strong>
-
-ReactDOM.render(
-    <div>
-        {tag}
+        <Primeiro></Primeiro>
     </div>, 
     document.getElementById('root')
 )
