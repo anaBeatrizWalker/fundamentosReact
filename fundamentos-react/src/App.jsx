@@ -12,21 +12,26 @@ export default _ =>//
         <h1>Fundamentos React</h1>
 
         <Card
-            titulo ="Exemplo de Card"/>
+            titulo ="#04 - Desafio do Número Aleatório">
+            <Aleatorio min={0} max={100}/>
+        </Card>
 
-        <Aleatorio
-            min={0}
-            max={100}/>
+        <Card
+            titulo ="#03 - Fragmento">
+            <Fragmento />
+        </Card>
 
-        <Fragmento />
+        <Card
+            titulo ="#02 - Componente com Paramêtro">
+            <ComParametro
+                titulo="Situação do Aluno"
+                aluno="Pedro"
+                nota={9.5} />
+        </Card>
 
-        <ComParametro
-            titulo="Situação do Aluno"
-            aluno="Pedro"
-            nota={9.5} />
+        <Card
+            titulo ="#01 - Primeiro Componente">
+            <Primeiro></Primeiro>
+        </Card>
 
-        <Primeiro></Primeiro>
     </div>
-/*Obs: 
-underline: função de apenas um parametro não obrigatório;
-as chaves podem ser retiradas junto com o return*/

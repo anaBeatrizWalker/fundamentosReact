@@ -3,6 +3,7 @@
     border: 3px solid red;
     border-radius: 5px;
     overflow: hidden;
+    margin: 15px;
 }
 .card .title{
     padding: 10px 0px;
