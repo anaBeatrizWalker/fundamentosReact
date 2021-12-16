@@ -1,6 +1,7 @@
 //Representa a aplicação de todos os Componentes
 
 import './App.css'
+import IndiretaPai from './components/comunicacao/IndiretaPai';
 import DiretaPai from './components/comunicacao/DiretaPai';
 import UsuarioInfos from './components/condicional/UsuarioInfos';
 import ParOuImpar from './components/condicional/ParOuImpar';
@@ -21,6 +22,10 @@ export default _ =>
         <h1>Fundamentos React</h1>
 
         <div className="exercicios">
+
+            <Card titulo ="#10 - Comunicação Indireta" color="#8BAD39">
+                <IndiretaPai></IndiretaPai>
+            </Card>
 
             <Card titulo ="#09 - Comunicação Direta" color="#59323C">
                 <DiretaPai></DiretaPai>
