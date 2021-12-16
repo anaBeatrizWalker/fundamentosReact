@@ -1,6 +1,7 @@
 //Representa a aplicação de todos os Componentes
 
 import './App.css'
+import TabelaProdutos from './components/repetição/TabelaProdutos'
 import ListaAlunos from './components/repetição/ListaAlunos';
 import Familia from './components/basicos/Familia';
 import FamiliaMembros  from './components/basicos/FamiliaMembros'
@@ -17,7 +18,11 @@ export default _ =>
 
         <div className="exercicios">
 
-        <Card titulo ="#06 - Repetição" color="#FF4C65">
+            <Card titulo ="#07 - Desafio da Repetição" color="#FF4C65">
+                <TabelaProdutos></TabelaProdutos>
+            </Card>
+
+            <Card titulo ="#06 - Repetição" color="#FF4C65">
                 <ListaAlunos></ListaAlunos>
             </Card>
 
