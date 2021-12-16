@@ -4,20 +4,20 @@ import produtos from "../../data/produtos";
 export default (props) =>{
     const tabela = produtos.map((product) =>{
         return(
-            <tr key={product.id}>
+            <tr key={product.id} className={i % 2 == 0 ? 'par' : 'impar'}>
                 <td>{product.id}</td>
                 <td>{product.nome}</td>
-                <td>{product.preco}</td>
+                <td>R$ {product.preco.toFixed(2).replace('.',',')}</td>
             </tr>
         )
     })
     return(
-        <div>
+        <div className="tabela">
             <table>
                 <tr>
-                    <td>Código</td>
-                    <td>Produto</td>
-                    <td>Preço</td>
+                    <th>Código</th>
+                    <th>Produto</th>
+                    <th>Preço</th>
                 </tr>
                 {tabela}
             </table>

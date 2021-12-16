@@ -18,7 +18,7 @@ export default _ =>
 
         <div className="exercicios">
 
-            <Card titulo ="#07 - Desafio da Repetição" color="#FF4C65">
+            <Card titulo ="#07 - Desafio da Repetição" color="#3A9AD9">
                 <TabelaProdutos></TabelaProdutos>
             </Card>
 

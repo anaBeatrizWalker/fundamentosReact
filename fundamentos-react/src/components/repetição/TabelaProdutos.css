@@ -1,0 +1,12 @@
+.tabela th{
+    background-color: #c0c0c0;
+}
+.tabela table{
+    width: 100%;
+}
+.tabela .par{
+    background-color: #ddd;
+}
+.tabela .impar{
+    background-color: #ccc;
+}
