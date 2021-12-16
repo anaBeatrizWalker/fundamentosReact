@@ -1,6 +1,10 @@
 import React from "react";
 
 export default props =>{
+
+    const gerarIdade = ()=> parseInt(Math.random() * (40-60)) + 40
+    const gerarNerd = ()=> Math.random() > 0.5
+
     return (
         <div>
             <div>
@@ -13,9 +17,9 @@ export default props =>{
             }>
                 Fornecer informações
             </button>
-            
+
             {/* OU */}
-            <button onClick={e => props.quandoClicar('Nilson', 41, true)}>
+            <button onClick={e => props.quandoClicar('Nilson', gerarIdade(), gerarNerd())}>
                 Fornecer informações
             </button>
         </div>
