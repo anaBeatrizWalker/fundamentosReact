@@ -1,6 +1,7 @@
 //Representa a aplicação de todos os Componentes
 
 import './App.css'
+import UsuarioInfos from './components/condicional/UsuarioInfos';
 import ParOuImpar from './components/condicional/ParOuImpar';
 import TabelaProdutos from './components/repetição/TabelaProdutos'
 import ListaAlunos from './components/repetição/ListaAlunos';
@@ -20,7 +21,14 @@ export default _ =>
         <div className="exercicios">
 
             <Card titulo ="#08 - Renderização Condicional" color="#982395">
+
                 <ParOuImpar numero={20}></ParOuImpar>
+
+                <UsuarioInfos usuario={{ nome:'Fernando' }}/>
+                <UsuarioInfos usuario={{ email:'fer@nando.com' }}/>
+                <UsuarioInfos usuario={{}}/>
+                <UsuarioInfos/>
+                
             </Card>
 
             <Card titulo ="#07 - Desafio da Repetição" color="#3A9AD9">

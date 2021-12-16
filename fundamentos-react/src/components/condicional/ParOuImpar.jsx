@@ -1,5 +1,5 @@
 import React from "react";
-
+//Renderização Condicional Ternária
 export default props =>{
     const isPar = props.numero % 2 === 0
     return (
