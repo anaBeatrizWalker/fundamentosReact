@@ -1,6 +1,7 @@
 //Representa a aplicação de todos os Componentes
 
 import './App.css'
+import ParOuImpar from './components/condicional/ParOuImpar';
 import TabelaProdutos from './components/repetição/TabelaProdutos'
 import ListaAlunos from './components/repetição/ListaAlunos';
 import Familia from './components/basicos/Familia';
@@ -17,6 +18,10 @@ export default _ =>
         <h1>Fundamentos React</h1>
 
         <div className="exercicios">
+
+            <Card titulo ="#08 - Renderização Condicional" color="#982395">
+                <ParOuImpar numero={20}></ParOuImpar>
+            </Card>
 
             <Card titulo ="#07 - Desafio da Repetição" color="#3A9AD9">
                 <TabelaProdutos></TabelaProdutos>
