@@ -2,6 +2,7 @@
 
 import './App.css'
 import Familia from './components/basicos/Familia';
+import FamiliaMembros  from './components/basicos/FamiliaMembros'
 import Card from "./components/layout/Card";
 import React from "react";
 import Primeiro from './components/basicos/Primeiro'
@@ -16,7 +17,11 @@ export default _ =>
         <div className="exercicios">
 
             <Card titulo ="#05 - Componentes com Filhos" color="#00C8F8">
-                <Familia sobrenome="Ferreira"/>
+                <Familia sobrenome="Ferreira">
+                    <FamiliaMembros nome="Pedro"/>
+                    <FamiliaMembros nome="Ana"/>
+                    <FamiliaMembros nome="Gustavo"/>
+                </Familia>
             </Card>
 
             <Card titulo ="#04 - Desafio do Número Aleatório" color="#FA6900">
