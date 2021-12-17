@@ -1,6 +1,7 @@
 //Representa a aplicação de todos os Componentes
 
 import './App.css'
+import Mega from './components/megasena/Mega';
 import Contador from './components/contador/Contador';
 import Input from './components/formulario/Input';
 import IndiretaPai from './components/comunicacao/IndiretaPai';
@@ -23,6 +24,10 @@ export default _ =>
         <h1>Fundamentos React</h1>
 
         <div className="exercicios">
+
+            <Card titulo ="#13 - Megasena" color="#B9006E">
+                <Mega qtde={6}></Mega>
+            </Card>
 
             <Card titulo ="#12 - Contador (Componente de Classe)" color="#424242">
                 <Contador numeroInicial={1}></Contador>
