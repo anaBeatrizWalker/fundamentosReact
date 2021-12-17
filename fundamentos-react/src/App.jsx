@@ -1,6 +1,7 @@
 //Representa a aplicação de todos os Componentes
 
 import './App.css'
+import Contador from './components/contador/Contador';
 import Input from './components/formulario/Input';
 import IndiretaPai from './components/comunicacao/IndiretaPai';
 import DiretaPai from './components/comunicacao/DiretaPai';
@@ -17,12 +18,15 @@ import ComParametro from './components/basicos/ComParametro'
 import Fragmento from './components/basicos/Fragmento'
 import Aleatorio from "./components/basicos/Aleatorio";
 
-
 export default _ =>
     <div className="app">
         <h1>Fundamentos React</h1>
 
         <div className="exercicios">
+
+            <Card titulo ="#12 - Contador (Componente de Classe)" color="#424242">
+                <Contador numeroInicial={1}></Contador>
+            </Card>
 
             <Card titulo ="#11 - Componente Controlado" color="#E45F56">
                 <Input></Input>
